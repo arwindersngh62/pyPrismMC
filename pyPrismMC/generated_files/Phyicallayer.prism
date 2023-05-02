@@ -1,0 +1,14 @@
+mdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+
+
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystem

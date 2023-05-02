@@ -1,0 +1,115 @@
+mdp 
+ 
+ 
+module PHYICALLAYER 
+SGL1 : bool init false; 
+SGL2 : bool init false; 
+SGL3 : bool init false; 
+SGL4 : bool init false; 
+SGL5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSGL1]  SGL1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SGL1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SGL1'= false); 
+[CompSGL2]  SGL2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SGL2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SGL2'= false); 
+[CompSGL3]  SGL3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL3'= false); 
+[CompSGL4]  SGL4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL4'= false); 
+[CompSGL5]  SGL5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystemmdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+L4 : bool init false; 
+L5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSGL1]  SGL1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SGL1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SGL1'= false); 
+[CompSGL2]  SGL2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SGL2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SGL2'= false); 
+[CompSGL3]  SGL3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL3'= false); 
+[CompSGL4]  SGL4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL4'= false); 
+[CompSGL5]  SGL5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystemmdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+L4 : bool init false; 
+L5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSGL1]  SGL1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SGL1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SGL1'= false); 
+[CompSGL2]  SGL2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SGL2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SGL2'= false); 
+[CompSGL3]  SGL3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL3'= false); 
+[CompSGL4]  SGL4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL4'= false); 
+[CompSGL5]  SGL5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystemmdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+L4 : bool init false; 
+L5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSGL1]  SGL1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SGL1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SGL1'= false); 
+[CompSGL2]  SGL2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SGL2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SGL2'= false); 
+[CompSGL3]  SGL3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL3'= false); 
+[CompSGL4]  SGL4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL4'= false); 
+[CompSGL5]  SGL5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SGL5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SGL5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystemmdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+L4 : bool init false; 
+L5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSG_L1]  SG_L1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SG_L1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SG_L1'= false); 
+[CompSG_L2]  SG_L2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SG_L2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SG_L2'= false); 
+[CompSG_L3]  SG_L3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_L3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_L3'= false); 
+[CompSG_L4]  SG_L4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_L4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_L4'= false); 
+[CompSG_L5]  SG_L5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_L5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_L5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystemmdp 
+ 
+ 
+module PHYICALLAYER 
+L1 : bool init false; 
+L2 : bool init false; 
+L3 : bool init false; 
+L4 : bool init false; 
+L5 : bool init false; 
+attackerBudget:[0..100] init 100;
+[CompSG_SG_L1]  SG_SG_L1= false & attackerBudget>10 ->(1-0.1):(attackerBudget'=attackerBudget-10 & SG_SG_L1'= true) + (0.1):(attackerBudget'=attackerBudget-10 & SG_SG_L1'= false); 
+[CompSG_SG_L2]  SG_SG_L2= false & attackerBudget>50 ->(1-0.5):(attackerBudget'=attackerBudget-50 & SG_SG_L2'= true) + (0.5):(attackerBudget'=attackerBudget-50 & SG_SG_L2'= false); 
+[CompSG_SG_L3]  SG_SG_L3= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L3'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L3'= false); 
+[CompSG_SG_L4]  SG_SG_L4= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L4'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L4'= false); 
+[CompSG_SG_L5]  SG_SG_L5= false & attackerBudget>40 ->(1-0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L5'= true) + (0.4):(attackerBudget'=attackerBudget-40 & SG_SG_L5'= false); 
+endmodule 
+ 
+ system 
+ PHYICALLAYER 
+ endsystem
